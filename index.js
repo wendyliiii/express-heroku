@@ -7,11 +7,10 @@ const port = process.env.PORT || 3000
 router.get('/homework', function(req, res) {
     res.json({ "name": "李涵寧",
   "email": "hanning@raphael.clinic" });
-})
-})
+});
 
 
-app.use('/', router);
+module.exports = router;
 app.listen(port, function () {
   console.log(`Example app listening on port ${port}!`)
 })
