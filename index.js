@@ -1,7 +1,5 @@
 const express = require('express')
 const app = express()
-const router =  = express.Router();
-
 const port = process.env.PORT || 3000
 
 // app.get('/homework', function(req, res) {
@@ -9,6 +7,8 @@ const port = process.env.PORT || 3000
 //   "email": "hanning@raphael.clinic" });
  
 // });
+var router =  = express.Router();
+
 router.get('/', function(req, res) {
   res.send('home page!');
 });
