@@ -3,7 +3,8 @@ const app = express()
 const port = process.env.PORT || 3000
 
 app.get('/homework', function(req, res) {
-   res.send('homework!');
+    res.json({ "name": "李涵寧",
+   "email": "hanning@raphael.clinic" });
 });
 app.get('/', function(req, res) {
    res.send('index!');
